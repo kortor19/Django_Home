@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {{block.super}} | Posts {% endblock %}
+{% block content %}
+    
+{% for posts in post %}
+                <h2><a href="{% url 'post_detail' posts.pk %}"> <h2>{{posts.title}}</h2>
+                </a></h2>
+                <p>{{posts.content}}</p>
+                <img src="{% static 'images/1.jpg' %}">
+                <p>Created by {{posts.author}}</p>
+                <p>Created at:{{posts.date_created}}</p>
+                <p>Updated at:{{posts.date_updated}}</p>
+                
+                 {% endfor %}
+                 {% if user.is_authenticated %}
+                <h2><a href="{% url 'new_post' %}" class="btn btn-primary btn-block">Create New Post</a></h2>
+                 {% else %}
+                 <a href="#" class="btn btn-sm btn-danger">Like Post</a>
+               {% endif %}
+
+     {% endblock %}
