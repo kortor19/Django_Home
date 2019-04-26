@@ -7,22 +7,16 @@ h2  a {
     text-underline-position: none;
 }
 
-.page-header {
-    background-color: green;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-    }
 
-    .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-        color: #d18989;
-        font-size: 36pt;
-        text-decoration: none;
-        }
 .navbar {
-    background-color: blueviolet;
-    color: forestgreen;
+    background-color: rgb(237, 234, 240);
+    color: rgb(4, 71, 24);
     font-style: normal;
-    font-size: x-large;
+    font-size: large;
+}
+
+body{
+    background-color: rgb(231, 227, 235);
 }
 
 
