@@ -7,7 +7,7 @@
                 <h2><a href="{% url 'post_detail' posts.pk %}"> <h2>{{posts.title}}</h2>
                 </a></h2>
                 <p>{{posts.content}}</p>
-                <img src="{% static 'images/1.jpg' %}">
+              
                 <p>Created by {{posts.author}}</p>
                 <p>Created at:{{posts.date_created}}</p>
                 <p>Updated at:{{posts.date_updated}}</p>

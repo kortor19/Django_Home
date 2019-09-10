@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #third party
     'crispy_forms',
     'pages',
+    'record',
 ]
 
 MIDDLEWARE = [
